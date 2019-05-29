@@ -1,0 +1,40 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    // 必须使用单引号
+    "quotemark": [true, "single"],
+    // 一个缩进必须用2个空格替代
+    "indent": [true, "spaces", 2],
+    "interface-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    // 禁止连续超过三行空行
+    "no-consecutive-blank-lines": false,
+    "no-console": false,
+    // 行尾必须有分号
+    "semicolon": false,
+    // 禁止对 array 使用 for in 循环
+    "no-for-in-array": true,
+    // if 后面必须有 花括号，除非是单行 if
+    "curly": [
+      true, 
+      "ignore-same-line"
+    ],
+    // for in 内部必须有 hasOwnProperty
+    "forin": true,
+    // 禁止出现空代码块，允许 catch 是空代码块
+    "no-empty": [
+      false,
+      "allow-empty-catch"
+    ],
+    "max-line-length": [false]
+  }
+}
