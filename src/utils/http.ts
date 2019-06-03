@@ -19,7 +19,7 @@ service.interceptors.response.use((response: any): Promise<any> => {
   /*
   * status为0是抛错 可结合自己业务进行修改
   */
-  if (data.status !== 0) {
+  if (data.code !== 0) {
     Message({
       message: data.message,
       type: 'error',

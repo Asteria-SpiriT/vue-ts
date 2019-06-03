@@ -6,6 +6,7 @@
       type="datetime"
       placeholder="选择日期时间">
     </el-date-picker>
+    <div>{{value1}}</div>
   </div>
 </template>
 
